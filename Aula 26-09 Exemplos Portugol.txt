@@ -1,0 +1,270 @@
+Revisão de conteúdo ! 
+
+Exemplos PARA
+estrutura de repetiçao : para
+
+programa {
+funcao inicio() 
+{
+  para (inteiro i = 1; i<=10; i++)
+  {
+       escreva ( "Olá pessoal, eu já falei Boa Noite ....", i, "vezes!!! :) \n")   
+  }
+}
+}
+
+
+===================================================	    
+estrutura de repetiçao : para
+
+programa {
+	funcao inicio() 
+	{
+	   para (inteiro i = 1; i<=10; i++)
+	   {
+	        escreva ( "Olá pessoal, eu já falei Boa Noite ....", i, "vezes!!! :) \n")   
+	   }
+	}
+}
+	
+
+
+
+===================================================	    
+
+Exemplo condição  PARA Enquanto...
+
+programa  { 
+funcao inicio () 
+{
+inteiro x, i
+faca {
+	escreva( "Digite um valor maior que zero : ")
+	leia(x)
+}
+enquanto  (x<= 0)
+para (i = 0; i<=10; i ++)
+
+{
+escreva (x, " , ", i ,"  = " , x +i, "\n")
+}
+}
+}
+
+=================================================================
+ver modelo utilizando CASO 
+programa {
+	funcao inicio() 
+	{
+	    inteiro N
+	    
+	    escreva ("Digite um número de 1 a 12 .... :> ")
+	    leia (N)
+	    escolha (N)
+	    {
+	    caso 1:
+	        escreva ( "Você escolheu o mês referente a JANEIRO !!!!")
+	    pare
+	    caso 2:
+	        escreva ( "Você escolheu o mês referente a FEVEREIRO !!!!")
+	    pare 
+	    caso 3:
+	        escreva ( "Você escolheu o mês referente a MARÇO !!!!")
+	    pare 
+	    caso 4:
+	        escreva ( "Você escolheu o mês referente a ABRIL!!!!")
+	    pare 
+	    caso 5:
+	        escreva ( "Você escolheu o mês referente a MAIO !!!!")
+	    pare 
+	    caso 6:
+	        escreva ( "Você escolheu o mês referente a JUNHO !!!!")
+	    pare
+	    caso 7:
+	        escreva ( "Você escolheu o mês referente a JULHO !!!!")
+	    pare 
+	    caso 8:
+	        escreva ( "Você escolheu o mês referente a AGOSTO !!!!")
+	    pare 
+	    caso 9:
+	        escreva ( "Você escolheu o mês referente a SETEMBRO !!!!")
+	    pare 
+	    caso 10:
+	        escreva ( "Você escolheu o mês referente a OUTUBRO !!!!")
+	    pare 
+	    caso 11:
+	        escreva ( "Você escolheu o mês referente a NOVEMBRO !!!!")
+	    pare 
+	    caso 12:
+	        escreva ( "Você escolheu o mês referente a DEZEMBRO !!!!")
+	    pare 
+	    caso contrario :
+	    escreva ("Você não escolheu um número válido de 1 a 12 ")
+	    }
+		
+	}
+}
+
+
+======================================
+
+Escreva se é vogal ou consoante 
+
+programa {
+	funcao inicio() 
+	{
+	    caracter X
+	    escreva ("Digite muma LETRA de A a Z  .... : > ")
+	    leia (X)
+	    escolha (X)
+	    {
+	    caso 'a':
+	        escreva ( "Você escolheu a vogal A")
+	    pare
+	    caso 'e':
+	        escreva ( "Você escolheu a vogal E")
+	    pare
+	    
+	    caso 'i':
+	        escreva ( "Você escolheu a vogal I")
+	    pare
+	    caso 'o':
+	        escreva ( "Você escolheu a vogal O")
+	    pare
+	    caso 'u':
+	        escreva ( "Você escolheu a vogal U")
+	    pare
+	    caso contrario:
+	    escreva ("você não escolheu uma vogal , provavelmente foi uma consoante! ! ! ")
+	    
+	    }
+	}
+	}
+	    
+========================================
+uma outra solução
+
+programa {
+	funcao inicio() 
+	{
+	    caracter X
+	    escreva ("Digite muma LETRA de A a Z  .... : > ")
+	    leia (X)
+	    escolha (X)
+	    {
+	    caso 'a':
+	    caso 'e':
+	    caso 'i':
+	    caso 'o':
+	    caso 'u':
+	        escreva ( "Você digitou uma  vogal! Que foi -> ", X )
+	    pare
+	    caso contrario:
+	    escreva ("você não escolheu uma vogal , provavelmente foi uma consoante! ! ! ")
+	    
+	    }
+	}
+}
+
+
+==================================================
+
+Exercícios 
+1- Faça um pseudocódigo utilizando portugol, que Leia o nome do funcionáiro e quanto ele ganha por um período de 1 ano(Doze meses)
+Faça a contabilidade de quanto ele ganha por ANO ( salario de todo ano) 
+
+
+programa {
+	funcao inicio() {
+real salario, totalsalario = 0.0
+cadeia nome
+escreva ("qual é o nome do seu funcionário  : ?")
+leia ( nome)
+para (inteiro cont =1 ; cont <=12; cont +=1)
+{
+escreva ( "digite o : ", cont, " salario do seu funcionário  \n")
+leia(salario)
+totalsalario = totalsalario + salario
+}
+escreva ( " O Total da folha de pagamento do seu funcionário " , nome,"  é ...R$:",totalsalario)
+}
+}
+
+
+=================================
+2- Faça um programa que LEIA a idade de 10 aluno e mostre qual é MAIOR e a MENOR idade dentre esses 10 colegas.
+( Se senão encadeados ) 
+
+
+programa {
+	funcao inicio() {
+
+inteiro idade, maioridade=0, menoridade=0
+para (inteiro cont =1; cont <=10; cont ++)  {
+
+escreva ( "Digite a " , cont, " º idade do aluno : " )
+leia(idade)
+
+se (cont ==1)
+
+{
+maioridade = idade
+menoridade = idade
+}
+senao  { 
+	se (idade > maioridade )
+	{
+	maioridade = idade
+	}
+	se (idade < menoridade)
+	{
+	menoridade = idade
+	}
+
+}
+}
+escreva ( " A maior idade é >" , maioridade ,"\n")
+escreva ( " A menor idade é >" , menoridade , "\n")
+}
+}
+
+
+======================================================
+
+
+3- Escreva um programa que leia a idade de 4 times com 5 jogadores e descubra qual é a  maio e a menor idade
+
+
+programa {
+	funcao inicio() {
+
+inteiro idade, maioridade=0, menoridade=0
+para (inteiro time =1; time <=4; time ++) {
+para (inteiro jogador =1; jogador <=5; jogador ++){
+
+escreva ( "Digite a idade do ",jogador,"º jogador, do ",time," ºTime \n")
+leia(idade)
+se ((time ==1) e ( jogador==1))
+{
+maioridade= idade
+menoridade= idade
+}
+senao {
+	se(idade > maioridade) {
+
+	maioridade = idade
+}
+	se (idade <menoridade)
+{
+	menoridade = idade
+}
+}
+}
+}
+escreva ( " A maior idade é >" , maioridade ,"\n")
+escreva ( " A menor idade é >" , menoridade , "\n")
+}
+}
+================================================================
+
+
