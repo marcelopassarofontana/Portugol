@@ -1,6 +1,6 @@
 Revisão de conteúdo ! 
 
-Exemplos PARA
+Exemplo 1 utilizando  PARA
 estrutura de repetiçao : para
 
 programa {
@@ -15,7 +15,7 @@ funcao inicio()
 
 
 ===================================================	    
-estrutura de repetiçao : para
+Exemplo 2 - estrutura de repetiçao : para
 
 programa {
 	funcao inicio() 
@@ -26,13 +26,11 @@ programa {
 	   }
 	}
 }
-	
-
 
 
 ===================================================	    
 
-Exemplo condição  PARA Enquanto...
+Exemplo 3 -condição  PARA Enquanto...
 
 programa  { 
 funcao inicio () 
@@ -50,9 +48,88 @@ escreva (x, " , ", i ,"  = " , x +i, "\n")
 }
 }
 }
+================================================================
+
+Exemplo 4 - digite S para continuar e N para parar encerrar o programa
+
+programa  { 
+funcao inicio () 
+{
+caracter continuar = 's'
+enquanto (continuar == 's')
+{
+escreva ("Você deseja continuar vendo essa mensagem DIGITE> s/n \n")
+escreva (" \n Digite 'n', para SAIR \n")
+leia(continuar)
+}
+escreva ("programa encerrado!") 
+    
+}
+}
+==============================================================
+
+Faça um programa que cheque o seu ano de nascimento  < 2022 e faça o calcula de sua idade
+
+Exemplo 1 de 2 
+//execute e teste, com ano de nascimento acima de 2022 
+
+programa {
+	funcao inicio() {
+
+inteiro anonascimento
+
+	escreva( "Digite o ano de nascimento  : " )
+	leia (anonascimento)
+	escreva ("você tem...", 2022-anonascimento, " anos de idade ")
+
+}
+}
+
+exemplpo 2 de 2 - usando FAÇA -> ENQUANTO ! 
+
+Faça um programa que cheque o seu ano de nascimento  < 2022 e faça o calcula de sua idade
+
+programa {
+	funcao inicio() {
+
+inteiro anonascimento
+faca  { 
+	escreva( "Digite o ano de nascimento  : " )
+	leia (anonascimento)
+}
+	enquanto(anonascimento > 2022)
+	escreva ("você tem...", 2022-anonascimento, " anos de idade ")
+}
+}
 
 =================================================================
-ver modelo utilizando CASO 
+Exemplos utilizando CASO -  >CASO
+Exemplo 1 CASO 
+
+programa {
+	funcao inicio() 
+	{
+	    caracter L
+	    
+	    escreva ("Digite S ou  N :> ")
+	    leia (L)
+	    escolha (L)
+	    {
+	    caso 'S':
+	        escreva ( "Você DIGITOU S   !!!!")
+	    pare
+	    caso 'N':
+	        escreva ( "Vocêdigitou N    !!!!")
+	    pare 
+	    caso contrario :
+	    escreva ("Você não escolheu uma letra válida, Escolha  S ou N ! ")
+	    }
+	}
+	
+}
+
+==================================================================
+Exemplo  2 caso  
 programa {
 	funcao inicio() 
 	{
@@ -107,7 +184,7 @@ programa {
 
 
 ======================================
-
+Exmeplo 3 Caso 
 Escreva se é vogal ou consoante 
 
 programa {
@@ -142,7 +219,7 @@ programa {
 	}
 	    
 ========================================
-uma outra solução
+Exemplo 4 - uma outra solução
 
 programa {
 	funcao inicio() 
@@ -266,5 +343,78 @@ escreva ( " A menor idade é >" , menoridade , "\n")
 }
 }
 ================================================================
+Utilizando o Enquanto como paradigma de "PARADA"  ... 
+
+Monte um program que some os número digitados até que o número digitado seja <=ZERO
+
+//TESTE ESSE 
 
 
+programa {
+	funcao inicio() {
+
+inteiro numero
+escreva( "Digite um número : " )
+leia(numero)
+enquanto (numero >0)
+{
+escreva( "programa em LOOP! " )
+}
+}
+}
+
+// Depois execute esse  :
+===========================================================
+Faça um programa que vai digitando numero maior que zero e conte a quantidade de numeros digitados (soma)
+programa {
+	funcao inicio() {
+
+inteiro numero , qtd=0
+escreva( "Digite um número : " )
+leia(numero)
+enquanto (numero >0)
+{
+qtd = qtd +1
+escreva( "Digite um outro número ! " )
+leia(numero)
+}
+escreva ("A Quantidade de números digitados foram... :" , qtd)
+}
+}
+=============================================================
+
+DESAFIO 
+FAÇA UM PROGRAMA QUE SIMULE O CALCULO DE TROCO NA COMPRA DE UM PRODUTO
+VALIDAR COM FAÇA ENQUANTO ! 
+
+	funcao inicio() {
+
+	real  valorcompra, pagamento, troco
+	caracter cliente = 's'
+	enquanto (cliente =='s')
+	{
+	faca
+		{
+		escreva("Digite o valor da compra : ") 
+		leia(valorcompra)
+		}
+		enquanto(valorcompra <=0)
+		faca
+	 	{
+		escreva(" Digite o pagamento do cliente  :")
+		leia(pagamento)
+		}
+			enquanto (pagamento < valorcompra)
+			troco = pagamento-valorcompra
+	escreva("Troco é  :",troco)
+	escreva( "\n Você atenderá um outro cliente ? Digite : S para SIM E N para NÃO ")
+	leia (cliente)
+    }
+	}
+}
+
+
+==============================================================
+
+exempplos disponível em :
+https://github.com/marcelopassarofontana/Portugol.git
